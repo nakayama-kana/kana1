@@ -16,7 +16,7 @@ public class Main {
 			String driverName=("com.mysql.cj.jdbc.Driver");
 			Class.forName("driverName");
 			
-			String url="jdbc:musql://localhost/ex01?serverTimezone=JST";
+			String url="jdbc:mysql://localhost/ex01?serverTimezone=JST";
 			String user="root";
 			String password="root";
 			con=DriverManager.getConnection(url,user,password);
@@ -43,9 +43,9 @@ public class Main {
 			}
 			
 		}
-		catch (ClassNotFoundException e) {
+		/*catch (ClassNotFoundException e) {
 			System.err.println("ドライバが見つかりません");
-		}
+		}*/
 		catch(SQLException e) {
 			System.err.println(e.getMessage());
 			}
